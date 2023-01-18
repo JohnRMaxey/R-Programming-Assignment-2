@@ -39,10 +39,10 @@ cacheSolve <- function(x, ...) {
     }
     else
     {
-    message("\nValue of inverseMatrix is NULL - calculating new value:\n")
-    data <- x$get()
-    inverseMatrix <- solve(data)
-    x$setInverse(inverseMatrix)
-    inverseMatrix 
+        message("\nValue of inverseMatrix is NULL - calculating new value:\n")
+        data <- x$get()
+        inverseMatrix <- solve(data)
+        x$setInverse(inverseMatrix)
+        inverseMatrix 
     }
 }
